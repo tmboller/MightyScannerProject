@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Team member Report</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="backToTeams()">
+        <ion-icon slot="icon-only" color="medium" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+      
+      <ion-label>Team one members</ion-label>
+      <ion-select multiple="true">
+          <ion-select-option value="Moroke Matchoma" > Moroke Matchoma</ion-select-option>
+                  <ion-select-option value="Joet Khomole">Joet Khomole</ion-select-option>
+                  <ion-select-option value="Marvin Mudau" >Marvin Mudau</ion-select-option>
+                  <ion-select-option value="Sibouiso Kholf">Sibouiso Kholf</ion-select-option>
+                  <ion-select-option value="Frans Masango">Frans Masango</ion-select-option>
+                  <ion-select-option value="Collen Mokgomola" >Collen Mokgomola</ion-select-option>
+                  <ion-select-option value="Dipuo Movoasehla">Dipuo Movoasehla</ion-select-option>
+                  
+        </ion-select>
+    </ion-item>
+
+<ion-item>
+  <ion-label position="floating">Problem Topic</ion-label>
+  <ion-textarea ></ion-textarea>
+</ion-item>
+
+<ion-item style="margin-bottom: 20px;">
+  <ion-label position="floating">Message</ion-label>
+  <ion-textarea clearOnEdit="true"></ion-textarea>
+</ion-item>
+<ion-button style="font-size: 1.2rem;" (click)="backToTeams()" color="danger" expand="full" shape="round">Send</ion-button>
+</ion-content>

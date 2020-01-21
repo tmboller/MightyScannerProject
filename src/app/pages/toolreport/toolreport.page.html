@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Tools & PPE Report</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="backToTools()">
+        <ion-icon slot="icon-only" color="danger" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+        
+    <ion-label>Category</ion-label>
+    <ion-select multiple="true">
+        <ion-select-option value="Tools" > Tools</ion-select-option>
+                <ion-select-option value="PPE">PPE</ion-select-option>
+              
+      </ion-select>
+  </ion-item>
+
+<ion-item>
+<ion-label position="floating">Problem Topic</ion-label>
+<ion-textarea></ion-textarea>
+</ion-item>
+
+<ion-item style="margin-bottom: 20px;">
+<ion-label position="floating">Message</ion-label>
+<ion-textarea clearOnEdit="true"></ion-textarea>
+</ion-item>
+<ion-button style="font-size: 1.2rem;" (click)="backToTools()" color="danger" expand="full" shape="round">Send</ion-button>
+
+</ion-content>

@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Sales & Sites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="typeSegment" color="danger" style="margin-top: 5%;">
+  
+    <ion-segment-button value="sale">
+      <ion-label>Market team</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="tech">
+      <ion-label>Sites</ion-label>
+    </ion-segment-button>
+
+
+  </ion-segment>
+  <div [ngSwitch]="typeSegment">
+    <ion-card *ngSwitchCase="'sale'" >
+      <img  src="assets/image/undraw_process_e90d.png" alt="" />
+      <ion-card-header>
+        
+        <ion-card-title>Sale Process</ion-card-title>
+        <ion-card-subtitle><strong>Marketing team</strong></ion-card-subtitle>
+      </ion-card-header>
+  
+    </ion-card>  
+    <ion-card *ngSwitchCase="'sale'"  >
+      <ion-card-header>
+        <ion-card-subtitle><strong>Sale Customer Information</strong></ion-card-subtitle>
+       
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Names <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked">Phone Number <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked">ID Number<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked">Email Address <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+        </ion-item>
+  
+        <ion-button style="font-size: 1.2rem;margin-top:10% ;" color="medium" expand="full" shape="round">Send</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'tech'" >
+      <img  src="assets/image/undraw_Ordinary_day_3gk3.png" alt="" />
+      <ion-card-header>
+        
+        <ion-card-title>Site Process</ion-card-title>
+        <ion-card-subtitle><strong>Technican teams</strong></ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>  
+    <ion-card *ngSwitchCase="'tech'"  >
+      <ion-card-header>
+        <ion-card-subtitle><strong>Site Information</strong></ion-card-subtitle>
+       
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Number of Site per Day <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+        </ion-item>
+  
+       
+  
+  
+       
+  
+        <ion-button style="font-size: 1.2rem;margin-top:10% ;" color="medium" expand="full" shape="round">Send</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  
+</ion-content>

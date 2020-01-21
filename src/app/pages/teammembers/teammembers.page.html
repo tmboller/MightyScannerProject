@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>teams</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="backToTeams()">
+        <ion-icon slot="icon-only" color="medium" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card>
+    <ion-card-header>
+        <ion-card-title style="font-size:15px;">
+            Team Leader select team members
+       </ion-card-title>
+
+    </ion-card-header>
+    <ion-item>
+        <ion-avatar slot="start">
+            <ion-icon color="medium" style="zoom: 2.2;" name="people"></ion-icon>
+        </ion-avatar>
+        <ion-label>Team one members</ion-label>
+        <ion-select multiple="true">
+            <ion-select-option value="Moroke Matchoma" > Moroke Matchoma</ion-select-option>
+                    <ion-select-option value="Joet Khomole">Joet Khomole</ion-select-option>
+                    <ion-select-option value="Marvin Mudau" >Marvin Mudau</ion-select-option>
+                    <ion-select-option value="Sibouiso Kholf">Sibouiso Kholf</ion-select-option>
+                    <ion-select-option value="Frans Masango">Frans Masango</ion-select-option>
+                    <ion-select-option value="Collen Mokgomola" >Collen Mokgomola</ion-select-option>
+                    <ion-select-option value="Dipuo Movoasehla">Dipuo Movoasehla</ion-select-option>
+                    
+          </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-avatar slot="start">
+              <ion-icon color="medium" style="zoom: 2.2;" name="people"></ion-icon>
+          </ion-avatar>
+          <ion-label>Team two members</ion-label>
+          <ion-select multiple="true">
+              <ion-select-option value="Moroke Matchoma" > Moroke Matchoma</ion-select-option>
+                      <ion-select-option value="Joet Khomole">Joet Khomole</ion-select-option>
+                      <ion-select-option value="Marvin Mudau" >Marvin Mudau</ion-select-option>
+                      <ion-select-option value="Sibouiso Kholf">Sibouiso Kholf</ion-select-option>
+                      <ion-select-option value="Frans Masango">Frans Masango</ion-select-option>
+                      <ion-select-option value="Collen Mokgomola" >Collen Mokgomola</ion-select-option>
+                      <ion-select-option value="Dipuo Movoasehla">Dipuo Movoasehla</ion-select-option>
+                      
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-avatar slot="start">
+                <ion-icon color="medium" style="zoom: 2.2;" name="people"></ion-icon>
+            </ion-avatar>
+            <ion-label>Team three members</ion-label>
+            <ion-select multiple="true">
+                <ion-select-option value="Moroke Matchoma" > Moroke Matchoma</ion-select-option>
+                        <ion-select-option value="Joet Khomole">Joet Khomole</ion-select-option>
+                        <ion-select-option value="Marvin Mudau" >Marvin Mudau</ion-select-option>
+                        <ion-select-option value="Sibouiso Kholf">Sibouiso Kholf</ion-select-option>
+                        <ion-select-option value="Frans Masango">Frans Masango</ion-select-option>
+                        <ion-select-option value="Collen Mokgomola" >Collen Mokgomola</ion-select-option>
+                        <ion-select-option value="Dipuo Movoasehla">Dipuo Movoasehla</ion-select-option>
+                        
+              </ion-select>
+          </ion-item>
+        </ion-card>
+          <ion-button style="width: 80%;margin-left: 40px;" (click)="backToTeams()" color="danger" expand="full" shape="round">Save members</ion-button>
+    </ion-content>
